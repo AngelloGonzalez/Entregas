@@ -109,7 +109,7 @@ h1{
 
 section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fotoP{
@@ -124,6 +124,7 @@ section{
     border: solid white 15px;
     border-radius: 4rem;
 }
+/* Cambiar el none cuando se tenga experiencia */
 
 .exp{
     display: flex;
@@ -134,7 +135,7 @@ section{
     color: var(--colorText);
     padding-top: 10px;
     padding-bottom: 10px;
-
+    display: none;
 }
 
 .datos{
@@ -145,6 +146,8 @@ section{
 
 .contenido{
     color: var(--colorText);
+    width: 35%;
+    padding-left: 7%;
 }
 
 .contenido li{
@@ -167,6 +170,6 @@ footer{
     justify-content: center;
     text-align: center;
     padding: 50px;
-    padding-top: 20px;
+    padding-top: 2%;
     padding-bottom: 1px;
 }
