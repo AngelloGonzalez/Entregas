@@ -20,7 +20,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    }
+    overflow: hidden;
+}
 
 header {
     border-bottom: solid var(--Cuadro);
@@ -82,9 +83,12 @@ a{
 }
 
 h1 {
+    font-size: 100px;    
     color: var(--Cuadro);
-    font-size: 20px;
-    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+    white-space: pre;
+    letter-spacing: 4px;
 }
 
 main {
@@ -114,17 +118,10 @@ main {
     color: var(--cir);
 }
 
-h1 {
-    font-size: 85px;    
-    color: var(--Cuadro);
-    text-transform: uppercase;
-    display: flex;
-    white-space: pre;
-    letter-spacing: 4px;
-}
+
 
 h3 {
-    font-size: 35px;
+    font-size: 50px;
     font-optical-sizing: auto;
     font-weight: 40;
     font-style: normal;
@@ -134,7 +131,7 @@ h3 {
     background-color: var(--Circulo);
     color: var(--cir);
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 8px;
     padding: 2%;
     margin: 3% 3% 3% 0;

@@ -122,7 +122,6 @@ section div{
 .imagen{
     display: flex;
     flex-direction: column; 
-
 }
 
 .img{
@@ -175,3 +174,77 @@ footer{
     text-align: center;
     padding-top: 1%;
 }
+
+/* diseño adaptativo para el ipad pro */
+
+@media (max-width: 1024px) {
+    
+    header{
+        margin: 5%;
+        padding-bottom: 3%;
+    }
+
+    nav a {
+        font-size: 25px;
+    }
+
+    .img-logo{
+        width: 20%;
+        height: 20%;
+    } 
+
+    h1{
+        padding: 1%;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    
+    }
+
+    section{
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagen a{
+        font-size: 40px;
+        padding:  2% 6% 2% 6%;
+        margin: 55% 18% 0%;
+    }
+
+    .imagen p{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+}
+
+
+/* diseño adaptativo para el iphone 12 pro */
+
+/* @media  (max-width: 490px) {
+    
+    header{
+        height: 100%;
+        display: flex;
+        width: 50vh;
+    }
+
+    .enlaces{
+        flex-direction: column;
+    }
+} */
