@@ -27,10 +27,10 @@ body{
 
 header{
     border-bottom: solid var(--Cuadro);
-    margin-top: 20px;
-    margin-left: 45px;
-    margin-right: 45px;
-    padding-bottom: 10px;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 1%;
 }
 
 nav{
@@ -47,7 +47,7 @@ a{
     display: flex;
     text-decoration: none;
     font-size: 20px;
-    color: rgb(91, 90, 90);
+    color: var(--Cuadro);
 }
 
 .listaHover:hover{
@@ -73,8 +73,8 @@ a{
 }
 
 .img-logo{
-    width: 50px;
-    height: 50px;
+    width: 6%;
+    height: 6%;
 } 
 
 .listaMenu{
@@ -99,7 +99,7 @@ main{
 }
 
 section{
-    margin: 0 180px;
+    margin: 0 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -110,10 +110,10 @@ section div{
     border-radius: 3rem;
     display: flex;
     flex-direction: row;
-    width: 300px;
-    height: 420px;  
+    width: 30%;
+    height: 58vh;  
     background-color: var(--fondo); 
-    margin-top: 50px;
+    margin-top: 3%;
     overflow: hidden;
     cursor: pointer;
     transition: all 0,3s;
@@ -127,7 +127,7 @@ section div{
 
 .img{
     width:100%;
-    height: 300px;
+    height: 70%;
     border-radius: 3rem;
 }
 
@@ -144,19 +144,26 @@ section div{
     text-align: center;
     background-color: var(--Titulo);
     color: var(--fondo);
-    margin-top: 10px;
-    padding: 20px 60px 20px 60px;
+    margin-top: 1%;
+    padding: 1% 3% 1% 3%;
     border-radius: 8px;
     display: flex;
     position: absolute;
-    margin: 390px 55px;
+    margin: 27% 5%;
     font-size: 15px;
     font-weight: bold;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
 }
 
 .imagen a:hover{
     transform: scale(1.1);
     box-shadow: 13px 15px 37px black;
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(5px,0px);
+    -webkit-transform: translate(5px,0px);
+    -moz-transform:translate(5px,0px);
 }
 
 footer{
