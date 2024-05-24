@@ -1,11 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
 
 :root{
 
@@ -19,34 +14,31 @@
     --textos: "Montserrat", sans-serif;
 }
 
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: var(--textos);
+}
+
+
 body{
     background-color: var(--fondo);
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
-header{
+/* ----------Inicio de Header -------------- */
+
+header {
     border-bottom: solid var(--colorText);
     margin-top: 1%;
     margin-left: 3%;
     margin-right: 3%;
-    padding-bottom: 1%;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--textos);
-
-}
-
-.menuNavegacion{
-    display: flex;
-}
-
-a{
+.listaHover{
     display: flex;
     text-decoration: none;
     font-size: 20px;
@@ -54,8 +46,8 @@ a{
 }
 
 .listaHover:hover{
-    background-color: #f5f4f6;
-    color: var(--colortTitulos);
+    background-color: var(--colortTitulos);
+    color: var(--colorText);
     padding: 3px;
     border-radius: 5px;
 }
@@ -65,19 +57,20 @@ a{
 }
 
 .logo a{
-    height: 100%;
-    align-items: center;
-    gap: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .p-logo{
+    margin-top: 1%;
     font-size: 20px;
     font-weight: bold;
+    color: var(--colorText);
 }
 
 .img-logo{
-    width: 6%;
-    height: 6%;
+    width: 5%;
+    height: 5%;
 } 
 
 .listaMenu{
@@ -87,29 +80,30 @@ a{
     list-style: none; 
 }
 
+/* --------------inicio de Main -------------- */
+
 main{
     width: 100%;
     height: 100%;
-    padding: 1% 5% 1% 5%;
-    font-family: var(--textos);
+    overflow: hidden;
+    padding: 1% 5% 0% 5%;
 }
 
 h1{
     font-family: var(--textos);
     color: var(--colortTitulos);
-    display: flex;
-    justify-content: end;
-    font-size: 40px;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     text-align: center;
-    padding-right: 30%;
-    padding-bottom: 3%;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 section{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
+    justify-content: space-between;
 }
 
 .fotoP{
@@ -126,6 +120,8 @@ section{
     border: solid white 15px;
     border-radius: 4rem;
 }
+
+
 /* Cambiar el none cuando se tenga experiencia */
 
 .exp{
@@ -148,20 +144,26 @@ section{
 
 .contenido{
     color: var(--colorText);
-    width: 35%;
+    width: 30%;
+}
+
+h3{
+    font-size: 30px;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    font-weight: bold;
     padding-left: 7%;
 }
 
 .contenido li{
-    width: 70%;
+    width: 100%;
+    font-size: 18px;
     line-height: 2rem;
-    padding-left: 1%;
+    list-style: none;
 }
 
-h2{
-    font-size: 30px;
-    padding-bottom: 4%;
-    padding-top: 2%;
+.caracteristicas{
+    padding-top: 4%;
 }
 
 footer{
@@ -171,5 +173,125 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 2%;
+    padding: 1% 2%;
+}
+
+
+/* diseño adaptativo para el ipad pro */
+
+@media screen and (max-width: 1024px) {
+
+    header{
+        margin-top: 6%;
+    }
+
+    main{
+        margin-top: 5%;
+        width: 100%;
+        height: 70vh;
+    }
+
+    h1{
+        justify-content: center;
+        margin-left: 0%;
+        width: 100%;
+        display: flex;
+    }
+
+    section{
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .fotoP{
+        width: 100%;
+        height: 100%;
+    }
+
+    .fotoP img{
+        width: 80%;
+        height: 100%;
+    }
+
+    .exp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lado{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenido{
+        width: 100%;
+        height: 100vh;
+    }
+
+    footer{
+        padding: 10%;
+    }
+}
+
+
+/* diseño adaptativo para el iphone 12 pro */
+
+@media screen and (max-width: 490px){
+
+    header{
+        margin: 0;
+        background-color: #331276;
+    }
+
+    main{
+        margin-top: 7%;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    section{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotoP{
+        margin-top: 7%;
+        margin-bottom: 10%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fotoP img{
+        width: 70%;
+        height: 70%;
+        border: solid white 4px;
+    }
+
+    /*QUEDA PENDIENTE EL DISPLAY NONE, PARA ACTUALIZAR INFORMACIÓN DE EXPERIENCIA */
+
+    .exp{
+        padding: 2%;
+        text-align: center;
+        gap: 0%;
+        height: 20%;
+        font-size: 13px;
+        margin-left: 5%;
+        display: none;
+     }
+
+    .datos{
+        font-size: 22px;
+
+    }
+
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
 }

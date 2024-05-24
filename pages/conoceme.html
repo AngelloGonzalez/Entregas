@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,8 @@
     <meta name="keyworks" content="conoce a Angelo">
     <meta name="descriptions" content="Hoja de vida">
     <link class="icon1" rel="shortcut icon" href="../assets/logoF.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/conoceme.css">
     <title>Conoceme-hoja-de-vida</title>
@@ -16,84 +19,105 @@
 tambien habilidades e idiomas aprendidos dentro de un main-->
 
 <body>
-    
+
     <!-- inicio header, encabezados y enlaces a otras paginas con informacion de relevancia mia -->
     <header>
-        <nav class="menuNavegacion">
-            <div class="logo">
-                <a href="#">
-                    <img class="img-logo" src="../assets/logoF.png" alt="logoF">
-                    <p class="p-logo">Portafolio 2024</p>
-                </a>
-            </div>
-            <div class="enlaces">
-                    <ul class="listaMenu">
-                    <li><a class="listaHover" href="../index.html">inicio</a></li>
-                    <li><a class="listaHover" href="../pages/contacto.html">Contacto</a></li>
-                    <li><a class="listaHover" href="../pages/proyectos.html">Proyectos</a></li>
-                    <li><a class="listaHover" href="../pages/experiencia.html">Experiencia</a></li>
-                    <li><a class="icon listaHover" href="mailto:angellog9714@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
-                    <li><a class="icon listaHover" href="https://wa.me/+523132508600?text=Contactame"><i class="bi bi-telephone-fill"></i></a></li>
-                    <li><a class="icon listaHover" href="https://github.com/AngelloGonzalez"><i class="bi bi-github"></i></a></li>
-                 </ul>
+
+        <nav class="menuNavegacion navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="logo ">
+                        <a class="text-decoration-none" href="../index.html">
+                            <img class="img-logo" src="../assets/logoF.png" alt="logoF">
+                            <p class="p-logo">Portafolio 2024</p>
+                        </a>
+                    </div>
+                    <div class="enlaces ">
+                        <ul class="listaMenu">
+                            <li><a class="listaHover" href="../index.html">Inicio</a></li>
+                            <li><a class="listaHover" href="./contacto.html">Contacto</a></li>
+                            <li><a class="listaHover" href="./experiencia.html">Experiencia</a></li>
+                            <li><a class="listaHover" href="./proyectos.html">Proyectos</a></li>                            
+                            <li><a class="icon listaHover" href="mailto:angellog9714@gmail.com"><i
+                                        class="bi bi-envelope-fill"></i></a></li>
+                            <li><a class="icon listaHover" href="https://wa.me/+523132508600?text=Contactame"><i
+                                        class="bi bi-telephone-fill"></i></a></li>
+                            <li><a class="icon listaHover" href="https://github.com/AngelloGonzalez"><i
+                                        class="bi bi-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
-    </header>
-    
-    <!-- aqui inicia mi main, como contenido de mi pagina web, donde plasmare foto, habiidades, estudios e idiomas -->
-    
-    <main>
-        <h1>¿Que hay de mi?</h1> 
 
-<!-- contenido foto, informacion de interes -->
+    </header>
+
+    <!-- aqui inicia mi main, como contenido de mi pagina web, donde plasmare foto, habiidades, estudios e idiomas -->
+
+    <main>
+        <h1>¿Que hay de mi?</h1>
+
+        <!-- contenido foto, informacion de interes -->
 
         <section>
-        <article class="fotoP"> 
-            <img src="../assets/fotoQueHayDeMi.jpg" alt="fotoDeMi">
-            <div class="exp">
-                <p class="datos">0</p>
-                <p>Años de Experiencia</p>
-                <p class="datos">0%</p>
-                <p>La confianza de Jefes y Clientes</span></p>
+            <article class="fotoP">
+                <img src="../assets/fotoQueHayDeMi.jpg" alt="fotoDeMi">
+                <div class="exp">
+                    <p class="datos">0</p>
+                    <p>Años de Experiencia</p>
+                    <p class="datos">0%</p>
+                    <p>La confianza de Jefes y Clientes</span></p>
+                </div>
+            </article>
+            <div class="contenido estudios">
+                <h3>
+                    Estudios
+                </h3>
+                <ul>
+                    <li class="caracteristicas">BootCamp Desarrollo Web Full Stack.</li>
+                    <li class="caracteristicas">Bachillerato Instituto Tecnico Padre Manuel birceño Jauregui "Fe y Alegría".</li>
+                    <li class="caracteristicas">Tecnólogo en Logística Militar.</li>
+                    <li class="caracteristicas">Diplomado en Alta Seguridad y Gestión del Riesgo.</li>
+                    <li class="caracteristicas">Diplomado en Alta Gerencia.</li>
+                </ul>
+                <h3>
+                    Idiomas
+                </h3>
+                <ul>
+                    <li>Ingles Basico.</li>
+                </ul>
             </div>
-        </article>
-        <div class="contenido estudios">
-            <h2>
-                Estudios
-            </h2>
-            <ul>
-                <li>BootCamp Desarrollo Web Full Stack</li>
-                <li>Bachillerato Instituto Tecnico Padre Manuel birceño Jauregui "Fe y Alegría"</li>
-                <li>Tecnólogo en Logística Militar</li>
-                <li>Diplomado en Alta Seguridad y Gestión del Riesgo</li>
-                <li>Diplomado en Alta Gerencia</li>
-            </ul>
-            <h2>
-                Idiomas
-            </h2>
-            <ul>
-                <li>Ingles Basico</li>
-            </ul>
-        </div>
-        <div class="contenido habilidades">
-            <h2>
-                habiidades
-            </h2>
-            <ul>
-                <li>Fácil Aprendizaje</li>
-                <li>Buena COmunicacion verbal y Escrita</li>
-                <li>Capacidad Para Trabajar en Equipo</li>
-                <li>Capacidad Para Liderar Equipos de Trabajo</li>
-                <li>Flexibilidad</li>
-            </ul>
-        </div>
-    </section>
+            <div class="contenido habilidades">
+                <h3>
+                    habiidades
+                </h3>
+                <ul>
+                    <li class="caracteristicas">Fácil Aprendizaje.</li>
+                    <li class="caracteristicas">Buena COmunicacion verbal y Escrita.</li>
+                    <li class="caracteristicas">Capacidad Para Trabajar en Equipo.</li>
+                    <li class="caracteristicas">Capacidad Para Liderar Equipos de Trabajo.</li>
+                    <li class="caracteristicas">Flexibilidad.</li>
+                </ul>
+            </div>
+        </section>
     </main>
 </body>
 <footer>
     <p>"¡Bienvenido a mi sitio web!, Desarrollador Web junior.
-         Aquí encontrarás información sobre mi experiencia, habilidades y proyectos.
-          No dudes en ponerte en contacto conmigo para colaboraciones o consultas.
-           ¡Gracias por visitar!"</p>
+        Aquí encontrarás información sobre mi experiencia, habilidades y proyectos.
+        No dudes en ponerte en contacto conmigo para colaboraciones o consultas.
+        ¡Gracias por visitar!"</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
 </html>
