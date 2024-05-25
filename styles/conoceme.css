@@ -56,6 +56,12 @@ header {
     color: var(--colortTitulos);
 }
 
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .logo a{
     display: flex;
     gap: 10px;
@@ -181,9 +187,21 @@ footer{
 
 @media screen and (max-width: 1024px) {
 
-    header{
-        margin-top: 6%;
+    body{
+        overflow: hidden;
+        box-sizing: border-box;
     }
+
+    .horizontal{
+        display: flex;
+        gap: 20px;
+    }
+
+    .icon{
+        font-size: 25px;
+    }
+
+    /* inicio del main e informacion */
 
     main{
         margin-top: 5%;
@@ -239,10 +257,26 @@ footer{
 
 @media screen and (max-width: 490px){
 
-    header{
-        margin: 0;
-        background-color: #331276;
+    body{
+        overflow-y: scroll;
     }
+
+    .logo{
+        margin-top: 8%;
+    }
+
+    .listaMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .horizontal{
+        display: flex;
+        gap: 100px;
+    }
+
+    /* inicio del main */
 
     main{
         margin-top: 7%;
@@ -286,7 +320,16 @@ footer{
 
     .datos{
         font-size: 22px;
+    }
 
+    .estudios{
+        border: solid green;
+        height: 50%;
+    }
+
+    .habilidades{
+        height: 50%;
+        border: solid red;
     }
 
     h3{

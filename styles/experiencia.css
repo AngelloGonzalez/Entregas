@@ -52,6 +52,12 @@ header {
     color: var(--Titulo);
 }
 
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .logo a{
     display: flex;
     gap: 10px;
@@ -165,13 +171,19 @@ h1{
 @media screen and (max-width: 1024px){
 
     body{
-        overflow-x: hidden;
         box-sizing: border-box;
+    }
+
+    .horizontal{
+        display: flex;
+        gap: 20px;
     }
 
     header{
         margin-top: 4%;
     }
+
+/* inicio del main */
 
     main{
         width: 95%;
@@ -226,4 +238,84 @@ h1{
 
 @media screen and (max-width: 490px){
 
+    body{
+        overflow-y: scroll;
+        box-sizing: border-box;
+    }
+    
+    .logo{
+        margin-top: 8%;
+    }
+
+    .listaMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .horizontal{
+        display: flex;
+        gap: 100px;
+    }
+
+    .icon{
+        font-size: 25px;
+    }
+
+/* -----Inicio de mi Main ------- */
+
+    main{
+        width: 95%;
+        height: 100%;
+    }
+
+    section{
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 21px;
+    }
+
+    .text{
+        font-size: 18px;
+        margin-right: 8%;
+        padding: 0;
+    }
+
+    .abajo{
+        padding-top: 110%;
+    }
+
+    .foto img{
+        width: 60%;
+        height: 40%;
+        margin-left: 10%;
+    }
+
+    .foto{
+        display: flex;
+        margin-top: 17%;
+    }
+
+    .añoExp{
+        font-size: 15px;
+    }
+
+    .derecha{
+        padding: 0;
+    }
+
+    .derecha2{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .foto p{
+        margin-left: 45%;
+        margin-top: 35%;
+        font-size: 40px;
+    }
 }

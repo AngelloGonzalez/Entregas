@@ -37,6 +37,8 @@ header {
     color: var(--Cuadro);
 }
 
+
+
 .listaHover:hover{
     background-color: var(--Circulo);
     color: var(--cir);
@@ -44,8 +46,15 @@ header {
     border-radius: 5px;
 }
 
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .icon{
     color: var(--Circulo);
+
 }
 
 .logo a{
@@ -158,9 +167,20 @@ h4 {
 
 @media screen and (max-width: 1024px) {
 
+    .horizontal{
+        display: flex;
+        gap: 20px;
+    }
+
+    .img-logo{  
+        width: 15%;
+        height: 15%;
+    } 
+    
+    /* inicio del main */
+    
    main{
     height: 95vh;
-    border: solid red;
    }
 
    .fotoPresentacion{
@@ -178,14 +198,30 @@ h4 {
 @media screen and (max-width: 490px) {
 
     body{
-        overflow-y: hidden;
-        height: 100%;
         position: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
     }
+
+    .logo{
+        margin-top: 8%;
+    }
+
+    .listaMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .horizontal{
+        display: flex;
+        gap: 100px;
+    }
+
+    .icon{
+        color: var(--Cuadro);
+        font-size: 25px;
+    }
+
+    /* inicio del main */
 
     main{
         width: 100%;
