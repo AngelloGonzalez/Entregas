@@ -323,13 +323,11 @@ footer{
     }
 
     .estudios{
-        border: solid green;
         height: 50%;
     }
 
     .habilidades{
         height: 50%;
-        border: solid red;
     }
 
     h3{
